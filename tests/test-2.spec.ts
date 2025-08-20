@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
   // Recording...
-});await page.goto('https://www.restaurant365.com/');
+});await page.goto('https://www.restaurant365.com/');await page.goto('https://www.atom.com/name/Test');
 
 await expect(page.locator('h1')).toMatchAriaSnapshot(`- heading "Back-Office Restaurant Management Software" [level=1]`);
 await page.getByRole('heading', { name: 'Back-Office Restaurant' }).click();

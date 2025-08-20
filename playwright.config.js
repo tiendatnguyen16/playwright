@@ -49,6 +49,10 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+    {
+      name: 'setup',
+      testMatch: '**/*.setup.ts'
+    },
 
     /* Test against mobile viewports. */
     // {
